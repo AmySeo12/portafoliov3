@@ -105,7 +105,7 @@ body {
 .subtitulo{
   font-weight: 800;
     color: #F73859;
-    font-family:"Dancing Script";
+    font-family:'Courgette', cursive;
     text-align: center;
     font-size: 2.5em;
 }
@@ -114,21 +114,23 @@ body {
   display: inline-block;
   margin: 6px;
   color: #384259;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .pregunta{
   color: #F73859;
 }
 
-#datos{
+#container section#datos{
   height: 85vh;
+  background-color: #CDCDCD;
 }
 /*slider*/
 /*GLOBALS*/
 #wrapper{
-  width:500px;
+  width:450px;
   height:400px;
   position:relative;
   color:#fff;
@@ -136,10 +138,11 @@ body {
 }
 
 #slider-wrap{
-  width:500px;
+  width:450px;
   height:400px;
   position:relative;
   overflow:hidden;
+  border-radius: 10%;
 }
 
 #slider-wrap ul#slider{
@@ -154,7 +157,7 @@ body {
 #slider-wrap ul#slider li{
   float:left;
   position:relative;
-  width:500px;
+  width:450px;
   height:400px; 
 }
 
@@ -227,11 +230,6 @@ body {
 }
 
 /*-----*/
-
-#container section:nth-of-type(2n) {
-  background-color: #edf1f5;
-}
-
 .hamburger {
   position: fixed;
   z-index: 4;
@@ -292,6 +290,29 @@ body {
   -webkit-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
 }
+
+.redes{
+  margin-top: -37px;
+  font-size: 1.2em;
+}
+
+#paper-back nav .redes a.fa{
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+#paper-back nav .redes a.fa-twitter{
+  color: #1DA1F2;
+}
+
+#paper-back nav .redes a.fa-linkedin{
+  color: #0077B5;
+}
+
+#paper-back nav .redes a.fa-github{
+  color: #323131;
+}
+
 
 @media (max-width: 600px) {
   #container section:first-of-type {
