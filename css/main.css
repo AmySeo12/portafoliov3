@@ -143,90 +143,6 @@ section#home{
 .tres{
     width: 70%;
 }
-
-/*-----*/
-.hamburger {
-  position: fixed;
-  z-index: 4;
-  top: 30px;
-  left: 30px;
-  width: 45px;
-  height: 34px;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.hamburger span {
-  position: relative;
-}
-.hamburger span, .hamburger span:before, .hamburger span:after {
-  display: block;
-  width: 45px;
-  height: 6px;
-  background-color: #243040;
-  border-radius: 2px;
-}
-.hamburger span:before, .hamburger span:after {
-  content: '';
-  position: absolute;
-}
-.hamburger span:before {
-  bottom: -14px;
-}
-.hamburger span:after {
-  bottom: -28px;
-}
-
-.close {
-  position: fixed;
-  top: 30px;
-  left: 30px;
-  width: 45px;
-  height: 34px;
-  cursor: pointer;
-}
-.close:before, .close:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 45px;
-  height: 6px;
-  top: 50%;
-  background-color: white;
-  border-radius: 2px;
-}
-.close:before {
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
-}
-.close:after {
-  -webkit-transform: translateY(-50%) rotate(-45deg);
-          transform: translateY(-50%) rotate(-45deg);
-}
-
-.redes{
-  margin-top: -37px;
-  font-size: 1.2em;
-}
-
-#paper-back nav .redes a.icon{
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-}
-#paper-back nav .redes a.fa-twitter{
-  color: #1DA1F2;
-}
-
-#paper-back nav .redes a.fa-linkedin{
-  color: #0077B5;
-}
-
-#paper-back nav .redes a.fa-github{
-  color: #323131;
-}
 /*Portafolio*/
 #container section#proyectos{
   box-shadow: 0px 9px 5px 0px rgba(189,183,189,1);
@@ -396,21 +312,20 @@ section#home{
 }
 
 /*Contacto*/
-#container section#contacto{
+section#contacto{
   box-shadow: 0px 9px 5px 0px rgba(189,183,189,1);
   height: auto;
   padding: 5% 0;
   background-color: #243040;
 }
-
-#container section#contacto p{
+section#contacto p{
   font-size: 1.8em;
     font-family: raleway;
     text-align: center;
     color: white;
 }
 
-#container section#contacto a:hover{
+section#contacto a:hover{
   text-decoration: none;
   color: white;
 }
@@ -442,7 +357,7 @@ section#home{
   .subtitulo{
     font-size: 2em;
   }
-  #container section#contacto p{
+  section#contacto p{
     font-size: 1.5em;
   }
   .btn{
