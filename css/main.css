@@ -2,6 +2,10 @@ body {
   font-family: 'Architects Daughter', sans-serif;
 }
 
+.none{
+  display: none;
+}
+
 #paper-back {
   width: 100%;
   height: 100vh;
@@ -366,11 +370,11 @@ body {
   width: 100%;
   opacity: 0;
 }
-.snip1446 h2 {
+.snip1446 h2, .contenedor-portafolio .info h2 {
   text-transform: uppercase;
   font-family: 'Raleway'
 }
-.snip1446 p {
+.snip1446 p, .contenedor-portafolio .info p {
   font-weight: 300;
 }
 .snip1446 .icons {
@@ -418,7 +422,7 @@ body {
   opacity: 0.7;
 }
 
-.snip1446 figcaption a{
+.snip1446 figcaption a, .contenedor-portafolio .info .icons a {
     padding: 3% 2%;
     background-color: #F73859;
     border-radius: 5px;
@@ -429,6 +433,15 @@ body {
 .snip1446 figcaption a:hover{
   text-decoration: none;
   color: white;
+}
+
+.contenedor-portafolio{
+  text-align: center;
+}
+
+.contenedor-portafolio img{
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*Contacto*/
@@ -480,5 +493,34 @@ body {
   #slider-wrap ul#slider li{
     width: 266px;
     height: 200px;
+  }
+  #container section#datos, #container section#proyectos, #container section#habilidades, #container section#contacto{
+    height: auto;
+    padding: 5%;
+  }
+
+  .portafolio{
+    padding: 0;
+  }
+  .texto{
+    top: 3%;
+  }
+
+  .texto h2{
+    font-size: 4em;
+  }
+
+  .subtitulo{
+    font-size: 2em;
+  }
+  #container section#contacto p{
+    font-size: 1.5em;
+  }
+  .btn{
+    width: 83%;
+  }
+  .foto{
+    width: 100%;
+    height: 261px;
   }
 }

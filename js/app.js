@@ -1,19 +1,3 @@
-var barra= document.getElementById("barrastyle");
-var barraUno= document.getElementById("barrastyleUno");
-var barraDos= document.getElementById("barrastyleDos");
-var barraTres= document.getElementById("barrastyleTres");
-var barraCuatro= document.getElementById("barrastyleCuatro");
-var barraCinco= document.getElementById("barrastyleCinco");
-
-var barraProgreso= function(){
-	barraUno.value+=5;
-	barra.value += 5;
-	barraDos.value+= 5;
-	barraTres.value +=5;
-	barraCuatro.value +=5;
-	barraCinco.value +=5;
-}
-
 var paperMenu = {
 	$window: $('#paper-window'),
 	$paperFront: $('#paper-front'),
@@ -67,11 +51,21 @@ var paperMenu = {
 
 };
 
+var cambioMenu= function(numero){
+  scroll = $(window).scrollTop();
+  if(scrollTop > numero){
+    setInterval(barraProgreso, 100)
+  }
+}
 paperMenu.init();
 
 $(document).ready(function(){
-	
-	setInterval(barraProgreso, 100);
+	var scroll;
+
+	if($( window ).width() < 768){
+		$(".segundoParrafo").addClass("none");
+	}else{
+	}
 	$(".hover").mouseleave(
 		function () {
 			$(this).removeClass("hover");
