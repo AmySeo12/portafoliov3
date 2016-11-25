@@ -41,6 +41,10 @@ section#home{
 }
 /*datos*/
 
+#proyectos .portafolio .row{
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
 .btn{
     background: #F73859;
     color: white;
