@@ -75,7 +75,7 @@ body {
     color: white;
     background-color: rgba(0,0,0,.6);
     padding: 2% 8%;
-    top: 8%;
+    top: 6%;
     left: 12.5%;
     width: 75%;
     text-align: center;
@@ -93,9 +93,22 @@ body {
     -webkit-animation: slideInUp 3s;
 }
 /*datos*/
+
+.btn{
+      background: #F73859;
+    color: white;
+    font-family: raleway;
+    font-size: 1.5em;
+    display: block;
+    margin: 2% auto;
+    width: 37%;
+}
+
 .foto{
-  width: 100%;
-  height: 100%;
+  width: 82%;
+  height: 403px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 55px 13px rgba(33,30,30,0.8);
 }
 
 .mg{
@@ -105,9 +118,14 @@ body {
 .subtitulo{
   font-weight: 800;
     color: #F73859;
-    font-family:'Courgette', cursive;
+    font-family:'Raleway', cursive;
     text-align: center;
     font-size: 2.5em;
+}
+
+.subtitulo i{
+    font-size: 1.5em;
+    margin-left: 32px;
 }
 
 .display{
@@ -125,74 +143,20 @@ body {
 
 #container section#datos{
   height: 85vh;
-  background-color: #CDCDCD;
-}
-/*slider*/
-/*GLOBALS*/
-#wrapper{
-  width:450px;
-  height:400px;
-  position:relative;
-  color:#fff;
-  text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;  
+  box-shadow: 0px 9px 5px 0px rgba(189,183,189,1);
 }
 
-#slider-wrap{
-  width:450px;
-  height:400px;
-  position:relative;
-  overflow:hidden;
-  border-radius: 10%;
-}
-
-#slider-wrap ul#slider{
-  width:100%;
-  height:100%;
-  
-  position:absolute;
-  top:0;
-  left:0;   
-}
-
-#slider-wrap ul#slider li{
-  float:left;
-  position:relative;
-  width:450px;
-  height:400px; 
-}
-
-#slider-wrap ul#slider li > div{
-  position:absolute;
-  top:20px;
-  left:35px;  
-}
-
-#slider-wrap ul#slider li > div h3{
-  font-size:36px;
-  text-transform:uppercase; 
-}
-
-#slider-wrap ul#slider li > div span{
-  font-family: Neucha, Arial, sans serif;
-  font-size:21px;
-}
-
-#slider-wrap ul#slider li i{
-  text-align:center;
-  line-height:400px;
-  display:block;
-  width:100%;
-  font-size:90px; 
-}
-/*ANIMATION*/
-#slider-wrap ul, #pagination-wrap ul li{
-  -webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-  -moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-  -o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-  -ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
-  transition: all 0.3s cubic-bezier(1,.01,.32,1); 
-}
 /*habilidades*/
+#container section#habilidades{
+  padding-top: 4%;
+  height: 80vh;
+  box-shadow: 0px 9px 5px 0px rgba(189,183,189,1);
+}
+
+.skills h3 i{
+    font-size: 1.5em;
+
+}
 .skills{
     padding-left: 6%;
 }
@@ -296,7 +260,7 @@ body {
   font-size: 1.2em;
 }
 
-#paper-back nav .redes a.fa{
+#paper-back nav .redes a.icon{
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
@@ -312,8 +276,193 @@ body {
 #paper-back nav .redes a.fa-github{
   color: #323131;
 }
+/*Portafolio*/
+#container section#proyectos{
+  box-shadow: 0px 9px 5px 0px rgba(189,183,189,1);
+  height: 100vh;
+  padding-top: 2%;
+}
 
+.portafolio{
+    padding: 1% 0 0 10%;
+}
 
+.snip1446 {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  height: 198px;
+  max-width: 315px;
+  max-height: 230px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
+.snip1446 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1446 img {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
+.snip1446:after,
+.snip1446:before,
+.snip1446 figcaption:after,
+.snip1446 figcaption:before {
+  background: #0a0a0a;
+  width: 25%;
+  position: absolute;
+  content: '';
+  opacity: 0;
+  -webkit-transition: all 0.3s steps(4);
+  transition: all 0.3s steps(4);
+  z-index: 1;
+  top: 100%;
+  bottom: 0;
+}
+.snip1446:before {
+  left: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+.snip1446:after {
+  left: 25%;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.snip1446 figcaption:before {
+  left: 50%;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  z-index: -1;
+}
+.snip1446 figcaption:after {
+  left: 75%;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  z-index: -1;
+}
+.snip1446 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 30px;
+}
+.snip1446 h2,
+.snip1446 p,
+.snip1446 .icons {
+  margin: 0;
+  width: 100%;
+  opacity: 0;
+}
+.snip1446 h2 {
+  text-transform: uppercase;
+  font-family: 'Raleway'
+}
+.snip1446 p {
+  font-weight: 300;
+}
+.snip1446 .icons {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+.snip1446 i {
+    padding: 0px 5px;
+    display: inline-block;
+    color: #ffffff;
+}
+.snip1446 i:hover {
+  opacity: 1;
+}
+.snip1446:hover:after,
+.snip1446.hover:after,
+.snip1446:hover:before,
+.snip1446.hover:before,
+.snip1446:hover figcaption:after,
+.snip1446.hover figcaption:after,
+.snip1446:hover figcaption:before,
+.snip1446.hover figcaption:before {
+  top: 0;
+  opacity: 0.8;
+}
+.snip1446:hover figcaption h2,
+.snip1446.hover figcaption h2,
+.snip1446:hover figcaption p,
+.snip1446.hover figcaption p,
+.snip1446:hover figcaption .icons,
+.snip1446.hover figcaption .icons {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.snip1446:hover figcaption h2,
+.snip1446.hover figcaption h2,
+.snip1446:hover figcaption .icons,
+.snip1446.hover figcaption .icons {
+  opacity: 1;
+}
+.snip1446:hover figcaption p,
+.snip1446.hover figcaption p {
+  opacity: 0.7;
+}
+
+.snip1446 figcaption a{
+    padding: 3% 2%;
+    background-color: #F73859;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.snip1446 figcaption a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+/*Contacto*/
+#container section#contacto{
+  box-shadow: 0px 9px 5px 0px rgba(189,183,189,1);
+  height: 50vh;
+  padding-top: 3%;
+  background-color: #243040;
+}
+
+#container section#contacto p{
+  font-size: 1.8em;
+    font-family: raleway;
+    text-align: center;
+    color: white;
+}
+
+#container section#contacto a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.redes-sociales{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3em;
+}
+
+.redes-sociales a i{
+    color: white;
+    padding: 2%;
+}
+/*----*/
 @media (max-width: 600px) {
   #container section:first-of-type {
     padding-top: 15vh;

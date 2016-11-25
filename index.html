@@ -4,7 +4,8 @@
 		<meta charset="utf-8">
 		<title>Portafolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<link href="https://fonts.googleapis.com/css?family=Actor|Courgette|Dancing+Script|Josefin+Sans|Kaushan+Script|Lobster|Muli|Pacifico|Yellowtail" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Actor|Courgette|Dancing+Script|Josefin+Sans|Kaushan+Script|Lobster|Muli|Pacifico|Yellowtail|Raleway" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -15,13 +16,14 @@
 			<nav>
 				<div class="close"></div>
 				<div class="redes">
-					<a href="https://www.linkedin.com/in/maryori-quiroz?trk=nav_responsive_tab_profile" target="_blank" class="fa fa-twitter"></a>
-					<a href="https://www.linkedin.com/in/maryori-quiroz?trk=nav_responsive_tab_profile" target="_blank" class="fa fa-linkedin"></a>
-					<a href="https://www.linkedin.com/in/maryori-quiroz?trk=nav_responsive_tab_profile" target="_blank" class="fa fa-github"></a>
+					<a href="https://www.linkedin.com/in/maryori-quiroz?trk=nav_responsive_tab_profile" target="_blank" class="fa fa-twitter icon"></a>
+					<a href="https://www.linkedin.com/in/maryori-quiroz?trk=nav_responsive_tab_profile" target="_blank" class="fa fa-linkedin icon"></a>
+					<a href="https://github.com/AmySeo12" target="_blank" class="devicon-github-plain icon"></a>
 				</div>
 				<a href="#home">Home</a>
-				<a href="#datos">About Us</a>
-				<a href="#">Our Work</a>
+				<a href="#datos">Sobre mí</a>
+				<a href="#habilidades">Habilidades</a>
+				<a href="#proyectos">Portafolio</a>
 				<a href="#contacto">Contacto</a>
 			</nav>
 		</div>
@@ -38,52 +40,37 @@
 					<section id="datos">
 						<div class="container">
 				            <div class="row">
-								<div class="col-md-10 col-xs-12">
+								<div class="col-md-12 col-xs-12">
 									<div class="col-md-6 col-xs-12 mg">
-										<div id="wrapper">
-											<div id="slider-wrap">
-												<ul id="slider">
-													<li data-color="#1abc9c">
-														<img src="img/perfil.jpg" class="foto">
-													</li>
-													<li data-color="#3498db">
-														<img src="img/foto2.jpg" class="foto">
-													</li>
-													<li data-color="#9b59b6">
-													</li>
-												</ul>
-											</div>
-										</div>
+										<img src="img/perfil.jpg" class="foto">
 									</div>
 									<div class="col-md-6 col-xs-12 mg">
-										<h2 class="subtitulo">SOBRE MÍ</h2>
-										<h4 class="display pregunta">Quién soy:</h4>
-										<p class="display parrafo">Soy egresada de Laboratoria especializada en Front-End Developer con ganas de emprender en el sector Tecnológico, hábil con la lógica, también en aprender rápidamente pero sobre todo hábil con comprender códigos de terceras personas. Responsable y aguerrida en el día día en donde con mucha pasión desarrollo los proyectos que poseo. Fue muy difícil el sobrellevar mis estudios pues me encontraba trabajando todos los fines de semana, en ocasiones no dormíapor las amaneccidas que tenía, pero eso no me importaba porque me enseñó que para alcanzarlo que queremos debemos de esforzarnos al 100%.</p>
+										<h2 class="subtitulo">SOBRE MÍ <i class="fa fa-info-circle animated pulse infinite"></i></h2>
+										<p class="display parrafo">Soy egresada de Laboratoria especializada en Front-End Developer con interés de emprender en el sector tecnológico. Con habilidad lógica a la hora de programar, de rápido aprendizaje y con facilidad para entender diferentes códigos. Responsable y aguerrida en cada nuevo proyecto.<br> Fue muy difícil el sobrellevar mis estudios pues me encontraba trabajando todos los fines de semana, en ocasiones no dormíapor las amaneccidas que tenía, pero eso no me importaba porque me enseñó que para alcanzarlo que queremos debemos de esforzarnos al 100%.</p>
+										<a type="button" class="btn btn-default" download href="docs/MaryoriCV.pdf">DESCARGAR CV</a>
 									</div>
-								</div>
-								<div class="col-md-2 col-xs-12">
 								</div>
 							</div>
 						</div>
 					</section>
-					<section>
+					<section id="habilidades">
 						<div class="container">
 							<div class="row">
-								<h2 class="subtitulo">HABILIDADES</h2>
+								<h2 class="subtitulo">HABILIDADES <i class="fa fa-graduation-cap animated pulse infinite"></i></h2>
 								<div class="col-md-6 col-xs-12 skills">
-									<h3>HTML5</h3>
+									<h3>HTML5 <i class="devicon-html5-plain colored"></i></h3>
 									<div>
 										<div class="contenedor-barra">
 											<progress value="0" max="100" class="barrastyle uno" id="barrastyle">
 										</div>
 									</div>
-									<h3>CSS3</h3>
+									<h3>CSS3 <i class="devicon-css3-plain colored"></i></h3>
 									<div>
 										<div class="contenedor-barra">
 											<progress value="0" max="100" class="barrastyle dos" id="barrastyleUno">
 										</div>
 									</div>
-									<h3>JavaScript</h3>
+									<h3>JavaScript <i class="devicon-javascript-plain colored"></i></h3>
 									<div>
 										<div class="contenedor-barra">
 											<progress value="0" max="100" class="barrastyle uno" id="barrastyleDos">
@@ -91,19 +78,19 @@
 									</div>
 								</div>
 								<div class="col-md-6 col-xs-12 skills">
-									<h3>jQuery</h3>
+									<h3>jQuery <i class="devicon-jquery-plain colored"></i></h3>
 									<div>
 										<div class="contenedor-barra">
 											<progress value="0" max="100" class="barrastyle tres" id="barrastyleTres">
 										</div>
 									</div>
-									<h3>Bootstrap</h3>
+									<h3>Bootstrap <i class="devicon-bootstrap-plain colored"></i></h3>
 									<div>
 										<div class="contenedor-barra">
 											<progress value="0" max="100" class="barrastyle tres" id="barrastyleCuatro">
 										</div>
 									</div>
-									<h3>Responsive</h3>
+									<h3>SASS <i class="devicon-sass-original colored"></i></h3>
 									<div>
 										<div class="contenedor-barra">
 											<progress value="0" max="100" class="barrastyle uno" id="barrastyleCinco">
@@ -113,8 +100,82 @@
 							</div>
 						</div>
 					</section>
-					<section></section>
+					<section id="proyectos">
+						<h2 class="subtitulo">PORTAFOLIO <i class="fa fa-code animated pulse infinite"></i>
+						</h2>
+						<div class="portafolio">
+							<figure class="snip1446">
+								<img src="img/whatsapp.png" alt="sample15" />
+								<figcaption>
+									<h2>WhatsApp Web</h2>
+									<p>Replica de Whatsapp Web realizado en JavaScript.</p>
+									<div class="icons">
+										<a href="https://github.com/AmySeo12/whatsappWeb" target="_blank"> <i class="devicon-github-plain"></i>Ver Código</a>
+										<a href="#" target="_blank">Demo</a>
+									</div>
+								</figcaption>
+							</figure>
+							<figure class="snip1446"><img src="img/pagina5.png" alt="sample71" />
+								<figcaption>
+									<h2>Trello</h2>
+									<p>Replica de Trello, realizado en JavaScript.</p>
+									<div class="icons">
+										<a href="https://github.com/AmySeo12/trello" target="_blank"> <i class="devicon-github-plain"></i>Ver Código</a>
+										<a href="#" target="_blank">Demo</a>
+									</div>
+								</figcaption>
+							</figure>
+							<figure class="snip1446"><img src="img/pagina7.png" alt="sample71" />
+								<figcaption>
+									<h2>LYFT</h2>
+									<p>Replica de la aplicación LYFT, es una APP mobile realizada en JQuery.</p>
+									<div class="icons">
+										<a href="https://github.com/AmySeo12/lyft" target="_blank"> <i class="devicon-github-plain"></i>Ver Código</a>
+										<a href="https://amyseo12.github.io/lyft/" target="_blank">Demo</a>
+									</div>
+								</figcaption>
+							</figure>
+							<figure class="snip1446"><img src="img/whatsapp.png" alt="sample71" />
+								<figcaption>
+									<h2>Instagram</h2>
+									<p>Replica de Instagram, realizada con Socket IO.</p>
+									<div class="icons">
+										<a href="https://github.com/AmySeo12/instagram" target="_blank"> <i class="devicon-github-plain"></i>Ver Código</a>
+										<a href="#" target="_blank">Demo</a>
+									</div>
+								</figcaption>
+							</figure>
+							<figure class="snip1446"><img src="img/pagina6.png" alt="sample71" />
+								<figcaption>
+									<h2>TO DO APP</h2>
+									<p>Aplicación en donde organizamos nuesras tareas. Realizada en JavaScript.</p>
+									<div class="icons">
+										<a href="https://github.com/AmySeo12/to-do-app" target="_blank"> <i class="devicon-github-plain"></i>Ver Código</a>
+										<a href="#" target="_blank">Demo</a>
+									</div>
+								</figcaption>
+							</figure>
+							<figure class="snip1446"><img src="img/pagina4.png" alt="sample71" />
+								<figcaption>
+									<h2>Facebook</h2>
+									<p>Replica de Facebook. Realizada en JavaScript.</p>
+									<div class="icons">
+										<a href="#" target="_blank"> <i class="devicon-github-plain"></i>Ver Código</a>
+										<a href="#" target="_blank"> Demo</a>
+									</div>
+								</figcaption>
+							</figure>
+						</div>
+					</section>
 					<section id="contacto">
+						<h2 class="subtitulo">CONTACTO <i class="fa fa-phone animated pulse infinite"></i>
+						</h2>
+						<p>Contáctate conmigo a <a class="email" href="mailto:maryori.amy@gmail.com">maryori.amy@gmail.com</a><br> o sígueme en:</p>
+						<div class="redes-sociales">
+							<a href="https://www.linkedin.com/in/maryori-quiroz?trk=nav_responsive_tab_profile" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.linkedin.com/in/maryori-quiroz?trk=nav_responsive_tab_profile" target="_blank"> <i class="fa fa-linkedin"></i> </a>
+							<a href="https://github.com/AmySeo12" target="_blank"> <i class="devicon-github-plain"></i></a>
+						</div>
 					</section>
 				</div>
 			</div>
