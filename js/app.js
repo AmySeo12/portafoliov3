@@ -1,74 +1,51 @@
-var paperMenu = {
-	$window: $('#paper-window'),
-	$paperFront: $('#paper-front'),
-	$hamburger: $('.hamburger'),
-	$menu: $("nav a"),
-	offset: 1800,
-	pageHeight: $('#paper-front').outerHeight(),
-	
-	open: function() {
-		this.$window.addClass('tilt');
-		this.$hamburger.off('click');
-		$('#container, .hamburger, nav a').on('click', this.close.bind(this));
-		this.hamburgerFix(true);
-	},
-	close: function() {
-		this.$window.removeClass('tilt'); 
-		$('#container, .hamburger').off('click');
-		this.$hamburger.on('click', this.open.bind(this));
-		this.hamburgerFix(false);
-	},
-	updateTransformOrigin: function() {
-		scrollTop = this.$window.scrollTop();
-		equation = (scrollTop + this.offset) / this.pageHeight * 100;
-		this.$paperFront.css('transform-origin', 'center ' + equation + '%');
-	},
-	//hamburger icon fix to keep its position
-	hamburgerFix: function(opening) {
-			if(opening) {
-				$('.hamburger').css({
-					position: 'absolute',
-					top: this.$window.scrollTop() + 30 + 'px'
-				});
-			} else {
-				setTimeout(function() {
-					$('.hamburger').css({
-						position: 'fixed',
-						top: '30px'
-					});
-				}, 300);
-			}
-		},
-	bindEvents: function() {
-		this.$hamburger.on('click', this.open.bind(this));
-		$('.close').on('click', this.close.bind(this));
-		this.$window.on('scroll', this.updateTransformOrigin.bind(this));
-	},
-	init: function() {
-		this.bindEvents();
-		this.updateTransformOrigin();
-	},
+(function(){
 
-};
+	var button = document.getElementById('cn-button'),
+    wrapper = document.getElementById('cn-wrapper'),
+    overlay = document.getElementById('cn-overlay');
 
-var cambioMenu= function(numero){
-  scroll = $(window).scrollTop();
-  if(scrollTop > numero){
-    setInterval(barraProgreso, 100)
-  }
-}
-paperMenu.init();
+	var open = false;
+	button.addEventListener('click', handler, false);
+	wrapper.addEventListener('click', cnhandle, false);
+
+	function cnhandle(e){
+		e.stopPropagation();
+		closeNav();
+	}
+
+	function handler(e){
+		if (!e) var e = window.event;
+	 	e.stopPropagation();
+
+	  	if(!open){
+	    	openNav();
+	  	}
+	 	else{
+	    	closeNav();
+	  	}
+	}
+	function openNav(){
+		open = true;
+	    button.innerHTML = "-";
+	    classie.add(overlay, 'on-overlay');
+	    classie.add(wrapper, 'opened-nav');
+	}
+	function closeNav(){
+		open = false;
+		button.innerHTML = "+";
+		classie.remove(overlay, 'on-overlay');
+		classie.remove(wrapper, 'opened-nav');
+	}
+	document.addEventListener('click', closeNav);
+
+})();
 
 $(document).ready(function(){
-	var scroll;
-
-	if($( window ).width() < 768){
-		$(".segundoParrafo").addClass("none");
+	if($(window).width() < 767){
+		$(".destokp").addClass("none");
+		$(".mobile").removeClass("none");
 	}else{
+		$(".destokp").removeClass("none");
+		$(".mobile").addClass("none");
 	}
-	$(".hover").mouseleave(
-		function () {
-			$(this).removeClass("hover");
-		}
-	);
-});
+})
