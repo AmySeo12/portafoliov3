@@ -38,14 +38,52 @@
 	}
 	document.addEventListener('click', closeNav);
 
+	var classeDuLienSDmooth =".smoothScroll";
+	var dureeDuSmooth = 800; 
+	/* SmoothScroll */
+	$(classeDuLienSDmooth).click(function(){  
+	    var idAncre = $(this).attr("href");
+	    $('html, body').stop().animate({
+	        scrollTop:$(idAncre).offset().top   
+	    }, dureeDuSmooth);
+	    closeNav(); 
+	  return false;
+	}); 
 })();
+var scroll;
+var barra= document.getElementById("barrastyle");
+var barraUno= document.getElementById("barrastyleUno");
+var barraDos= document.getElementById("barrastyleDos");
+var barraTres= document.getElementById("barrastyleTres");
+var barraCuatro= document.getElementById("barrastyleCuatro");
+var barraCinco= document.getElementById("barrastyleCinco");
+
+var barraProgreso= function(){
+  barraUno.value+=2;
+  barra.value += 2;
+  barraDos.value+= 2;
+  barraTres.value +=2;
+  barraCuatro.value +=2;
+  barraCinco.value +=2;
+}
 
 $(document).ready(function(){
 	if($(window).width() < 767){
+		progress(1242);
 		$(".destokp").addClass("none");
 		$(".mobile").removeClass("none");
 	}else{
+		progress(1120);
 		$(".destokp").removeClass("none");
 		$(".mobile").addClass("none");
 	}
 })
+
+function progress(num){
+	$(window).scroll(function(){
+		scroll = $(window).scrollTop();
+		if(scroll>num){
+			setInterval(barraProgreso, 100);
+		}	
+	})
+}
